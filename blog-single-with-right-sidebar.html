@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- As 3 metatags acima * devem * vir em primeiro lugar na cabeça; qualquer outro conteúdo principal deve vir * depois * dessas tags -->
+<title>SITE EAD TESTE!</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
+    <!-- Font Awesome -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">    
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/> 
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen" /> 
+    <!-- Animate css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css"/> 
+    <!-- Progress bar  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-progressbar-3.3.4.css"/> 
+     <!-- Theme color -->
+    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
+
+    <!-- Estilo principal -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Fonte -->
+
+    <!-- Fonte de corpo aberto,livre... -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Lato for Title -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>    
+  </head>
+  <body>
+
+  <!-- PRÉ-CARREGADOR -->
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+  <!-- FIM -->
+
+  <!-- BOTÃO TOP DE ROLAMENTO -->
+  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+  <!-- BOTÃO SUPERIOR DO ROLAMENTO FIM -->
+
+  <!-- Cabeçalho de início -->
+  <header id="header">
+    <!-- Busca superior do cabeçalho -->
+    <div class="header-top">
+      <div class="container">
+        <form action="">
+          <div id="search">
+          <input type="text" placeholder="Digite sua palavra-chave de pesquisa aqui e pressione Enter ..." name="s" id="m_search" style="display: inline-block;">
+          <button type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+        </form>
+      </div>
+    </div>
+    <!-- header bottom -->
+    <div class="header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="header-contact">
+              <ul>
+                <li>
+                  <div class="phone">
+                    <i class="fa fa-phone"></i>
+                    +55 (41) 99999999
+                  </div>
+                </li>
+                <li>
+                  <div class="mail">
+                    <i class="fa fa-envelope"></i>
+                    teste@teste.com
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="header-login">
+              <a class="login modal-form" data-target="#login-form" data-toggle="modal" href="#">Login / Inscrever-se</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Cabeçalho final -->
+  
+  <!-- Inicio da Janela de Login (modal) -->
+  <div aria-hidden="false" role="dialog" tabindex="-1" id="login-form" class="modal leread-modal fade in">
+    <div class="modal-dialog">
+      <!-- Start login section -->
+      <div id="login-content" class="modal-content">
+        <div class="modal-header">
+          <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title"><i class="fa fa-unlock-alt"></i>Login</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="Seu nome" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Senha" class="form-control">
+            </div>
+             <div class="loginbox">
+              <label><input type="checkbox"><span>Lembrar-me</span></label>
+              <button class="btn signin-btn" type="button">ENTRAR</button>
+            </div>                    
+          </form>
+        </div>
+        <div class="modal-footer footer-box">
+          <a href="#">Esqueceu a senha ?</a>
+          <span>Sem conta? <a id="signup-btn" href="#">Inscrever-se. </a></span>            
+        </div>
+      </div>
+      <!-- Iniciar sessão de inscrição -->
+      <div id="signup-content" class="modal-content">
+        <div class="modal-header">
+          <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title"><i class="fa fa-lock"></i>Cadastro</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input placeholder="Nome" class="form-control">
+            </div>
+            <div class="form-group">
+              <input placeholder="Sobrenome" class="form-control">
+            </div>
+            <div class="form-group">
+              <input placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Senha" class="form-control">
+            </div>
+            <div class="signupbox">
+              <span>Já tem conta? <a id="login-btn" href="#">Cadastrar.</a></span>
+            </div>
+            <div class="loginbox">
+              <label><input type="checkbox"><span>Relembrar-me</span><i class="fa"></i></label>
+              <button class="btn signin-btn" type="button">INSCREVER-SE</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End login modal window -->
+      
+  <!-- BEGIN MENU -->
+  <section id="menu-area">      
+    <nav class="navbar navbar-default" role="navigation">  
+      <div class="container">
+        <div class="navbar-header">
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- LOGO -->              
+          <!-- TEXT BASED LOGO -->
+          <a class="navbar-brand" href="index.html">EAD - INTERATIVO</a>              
+          <!-- IMG BASED LOGO  -->
+           <!-- CASO DESEJAR COLOCAR UMA LOGO APAGAR ESTA LINHA DO CODIGO 174 E INCLUIR ESSA: <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="logo"></a> -->
+        </div>               
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="feature.html">CARACTERISTICAS</a></li>
+            <li><a href="service.html">CURSOS</a></li>
+            
+            <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="blog-archive.html">ARQUIVOS DO BLOG</a></li>                
+              
+                
+
+              </ul>
+            </li>
+           >               
+            <li><a href="contact.html">CONTATO</a></li>
+          </ul>                     
+        </div><!--/.nav-collapse -->
+        <!-- search icon -->
+        <a href="#" id="search-icon">
+          <i class="fa fa-search">            
+          </i>
+        </a>
+      </div>     
+    </nav>
+  </section>
+  <!-- END MENU --> 
+  
+  <!-- Start single page header -->
+  <section id="single-page-header">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="single-page-header-left">
+              <h2>O que é Java?</h2>
+                <p>Java é uma linguagem de programação desenvolvida em 1991 pela empresa Sun Microsystems. Orientada a objetos, esta linguagem foi criada inicialmente para ser utilizada em equipamentos como controles de TV, telefones, fornos, geladeiras, entre outros aparelhos.</p>
+
+                <p>Atualmente o Java é considerado uma das linguagens mais comuns no universo da programação, uma vez que ele é a base para aplicativos e sistemas.</p>
+
+
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="single-page-header-right">
+              <ol class="breadcrumb">
+                <li><a href="#">inicio</a></li>
+                <li class="active">O que é Java?</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End single page header -->
+  
+  <!-- Start blog archive -->
+  <section id="blog-archive">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="blog-archive-area">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="blog-archive-left">
+                  <!-- Start blog news single -->
+                  <article class="blog-news-single">
+                    <div class="blog-news-img">
+                      <img src="assets/images/aprenderjava.jpg" alt="image">
+                    </div>
+                    <div class="blog-news-title">
+                      <h2>Por que programar em Java?</h2>
+                      <p>By <a class="blog-author" href="#">Guilherme Simões</a> <span class="blog-date">|21 Novembro 2018</span></p>
+                    </div>
+                    <div class="blog-news-details blog-single-details">
+                      <p>Nos últimos anos o Java tem sido utilizado em todo o mundo. Sejam aplicações mobile, jogos, sistemas, plataformas web, entre outras tecnologias, o Java possui presença confirmada. E em meio ao seu grande uso, surge a necessidade cada vez maior de profissionais para programarem nesta linguagem, afinal, até mesmo o menu da sua televisão é criado em Java.</p>
+
+                   <!-- DICA TEXTO COM LINNK   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum bibendum arcu id varius. Praesent venenatis arcu orci, vestibulum tempus tortor sagittis ac. Donec convallis ultricies vulputate. Proin tristique arcu vel cursus venenatis. Curabitur vehicula pharetra sapien quis rutrum. Donec luctus sit amet mi at dictum <a href="#">text</a></p>
+                      <blockquote>
+                          -->
+                        
+                    <!-- DICA DE DESTACAR COMENTARIO NO MEIO DA PAGINA.    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from</p>
+                        <span> - Guilherme </span>
+                      </blockquote>
+                      -->
+                        <h3>Primeiros passos para aprender a programar em Java.</h3>
+                        
+                      <p>Agora que você já tem uma breve noção sobre o que é Java e porque ele é uma linguagem de programação importante. Veja a seguir 6 passos básicos para começar a aprender esta tecnologia.</p>
+                        
+                 <!-- MAIS UMA DICA DE TEXTO COM DESTAQUES     <ul>
+                        <li>There are many variations of passages of Lorem Ipsum</li>
+                        <li>There are many variations of passages of Lorem Ipsum</li>
+                        <li>There are many variations of passages of Lorem Ipsum</li>
+                        <li>There are many variations of passages of Lorem Ipsum</li>
+                        <li>There are many variations of passages of Lorem Ipsum</li>
+                      </ul>
+-->
+                                              
+                        
+                      <ol>
+                        <li><b>Inicie pela lógica de programação</b><p>TConforme já mencionamos em outro artigo, se você pretende aprender Java é fundamental começar pela linguagem de programação, já que ela representa a base para aprender qualquer outra linguagem. Portanto, se você ainda não tem nenhuma experiência com Java ou qualquer outra linguagem, vale a pena iniciar com esta dica.</p></li>
+                          
+                        <li> <b>Estude os conceitos</b><p>Por ser uma linguagem orientada a objetos, é fundamental que você conheça este conceito antes de prosseguir com o Java. Neste link você encontrará um material oficial do Java para aprender um pouco mais sobre o conceito de linguagem orientada a objetos e ir se familiarizando com o assunto. No entanto, você poderá encontrar facilmente por mais fontes sobre este assunto na internet </p></li>
+                          
+                          
+                          <li><b>Faça download das ferramentas</b></li><p>Outro passo fundamental para começar a programar em Java, é instalar em seu computador o Java (JDK). <a href="http://www.oracle.com/technetwork/topics/newtojava/documentation/index.html" target="_blank"><b>Neste link</b></a> você poderá fazer o download e instalá-lo normalmente.</p><p>É interessante realizar também o download da documentação que irá lhe auxiliar na utilização do JDK.</p>
+                          
+                        <li><b>Utilize o Java Tutorial</b></li><p>O Java Tutorial é um portal onde você irá encontrar tudo o que precisa para começar a programar em Java. Lá você irá encontrar diversas lições sobre uma série de assuntos ligados à programação em Java, sendo desde a criação e compilação de uma aplicação Java até uma visão geral das funcionalidades existentes.</p>
+                          
+                          <li><b>Tenha boas fontes de pesquisa</b></li><p>Outro passo muito importante para aprender a programar em Java é buscar por boas fontes de pesquisa. Neste caso, nós recomendamos que você se filie ao Java Developer Connection para acessar recursos mais técnicos (o registro é gratuito).</p>
+                          
+                          
+                      </ol>
+                        
+                    <!-- Dicas de tamanho de texto, paragrafos que podem ser aplicados    
+                      <h1>Exemplo 1</h1>
+                      <h2>Exemplo 2</h2>
+                      <h3>Exemplo 3</h3>
+                      <h4> </h4>
+                      <h5> </h5>
+                      <h6> </h6>
+-->
+                      <div class="blog-single-bottom">
+                        <div class="row">
+                          <div class="col-md-8">
+                            <div class="blog-single-tag">
+                              <span class="fa fa-tags"></span>
+                              <a href="#">Programção,</a>
+                              <a href="#">Java,</a>
+                              <a href="#">Linguagens</a>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="blog-single-social">
+                              <a href="#"><i class="fa fa-facebook"></i></a>
+                              <a href="#"><i class="fa fa-twitter"></i></a>
+                              <a href="#"><i class="fa fa-linkedin"></i></a>
+                              <a href="#"><i class="fa fa-google-plus"></i></a>
+                              <a href="#"><i class="fa fa-pinterest"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <!-- Start blog navigation -->
+                  <div class="blog-navigation-area">
+                    <div class="blog-navigation-prev">
+                      <a href="blog-archive.html">
+                        
+                        <span>Voltar ao inicio do blog</span>
+                      </a>
+                    </div>
+                   
+                  </div>
+                  <!-- Start Comment box -->
+                  <div class="comments-box-area">
+                    <h2>Deixe um comentario!</h2>
+                    <p>Deixe sua duvida, não esqueça de por seu email, para nossa equipe responder você!</p>
+                    <form action="" class="comments-form">
+                      <div class="form-group">                        
+                        <input type="text" class="form-control" placeholder="Seu nome">
+                      </div>
+                      <div class="form-group">                        
+                        <input type="email" class="form-control" placeholder="Email">
+                      </div>
+                      <div class="form-group">                        
+                        <textarea placeholder="Seu comentario, duvida, digite aqui..." rows="3" class="form-control"></textarea>
+                      </div>
+                      <button class="comment-btn">Enviar!</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <aside class="blog-side-bar">
+                  <!-- Start sidebar widget -->
+                  <div class="sidebar-widget">
+                    <!-- Start blog search -->
+                    <form>                    
+                      <div class="search-group">                        
+                        <button type="button" class="blog-search-btn"><span class="fa fa-search"></span></button>
+                        <input type="search" placeholder="Search">
+                      </div>                    
+                    </form>
+                    <!-- End blog search -->                                
+                  </div>
+                  <!-- Start sidebar widget -->
+                  <div class="sidebar-widget">
+                    <h4 class="widget-title">Categorias</h4>
+                    <ul class="widget-catg">                      
+                      <li><a href="#">Photoshop</a></li>
+                      <li><a href="#">Web Design</a></li>
+                      <li><a href="#">Programação</a></li>
+                      <li><a href="#">Novidades</a></li>
+                      <li><a href="#">Informaçãoes</a></li>
+                    </ul>
+                  </div>
+                  <!-- Start sidebar widget -->
+                  <div class="sidebar-widget">
+                    <h4 class="widget-title">Widget</h4>
+                    <p>Essa parte do site, fica as informações em gerais, é possivel por uma caixa de dialogo, um link, um video, como o site está em fase de testes, futuramente é possivel colocar nesta area, tudo oque está sendo representado no site é ficticio.</p>
+                  </div>
+                  <!-- Start sidebar widget -->
+                  <div class="sidebar-widget">
+                    <h4 class="widget-title">Tags</h4>
+                    <div class="tag-cloud">
+                      <a href="#">Programação</a>
+                      <a href="#">Design</a>
+                      <a href="#">Cursos</a>
+                      <a href="#">Dicas</a>
+                      <a href="#">Software</a>
+                      <a href="#">Photoshop</a>
+                      <a href="#">Tecnologia</a>                      
+                      <a href="#">Faculdade</a>
+                      <a href="#">Linguagem de programação</a>
+                     
+                    </div>
+                  </div>
+                  <!-- Start sidebar widget -->
+                  <div class="sidebar-widget">
+                    <h4 class="widget-title">ARQUIVOS</h4>
+                    <ul class="widget-archive">
+                      <li><a href="#">Novembro 2018<span>(1)</span></a></li>
+                     
+                    </ul>
+                  </div>
+                  <!-- Start sidebar widget -->
+                  <div class="sidebar-widget">
+                    <h4 class="widget-title">LINKS IMPORTANTES</h4>
+                    <ul>
+                      <li><a href="#">Link 1</a></li>
+                      <li><a href="#">Link 2</a></li>
+                      <li><a href="#">Link 3</a></li>
+                      <li><a href="#">Link 4</a></li>
+                    </ul>
+                  </div>
+                </aside>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+  <!-- End blog archive -->
+
+ 
+  <!-- Start subscribe us -->
+  <section id="subscribe">
+    <div class="subscribe-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="subscribe-area">
+              <h2 class="wow fadeInUp">Receba Atualizações no EMAIL:</h2>
+              <form action="" class="subscrib-form wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                <input type="text" placeholder="Digite seu email...">
+                <button class="subscribe-btn" type="submit">inscrever</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End subscribe us -->
+
+  <!-- Start footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <div class="footer-left">
+            <p>Desenvolvido por <a href="#">Guilherme</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="footer-right">
+            <a href="index.html"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End footer -->
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Bootstrap -->
+  <script src="assets/js/bootstrap.js"></script>
+  <!-- Slick Slider -->
+  <script type="text/javascript" src="assets/js/slick.js"></script>    
+  <!-- mixit slider -->
+  <script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
+  <!-- Add fancyBox -->        
+  <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+ <!-- counter -->
+  <script src="assets/js/waypoints.js"></script>
+  <script src="assets/js/jquery.counterup.js"></script>
+  <!-- Wow animation -->
+  <script type="text/javascript" src="assets/js/wow.js"></script> 
+  <!-- progress bar   -->
+  <script type="text/javascript" src="assets/js/bootstrap-progressbar.js"></script>  
+  
+ 
+  <!-- Custom js -->
+  <script type="text/javascript" src="assets/js/custom.js"></script>
+  
+  </body>
+</html>

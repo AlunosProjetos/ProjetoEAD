@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- As 3 metatags acima * devem * vir em primeiro lugar na cabeça; qualquer outro conteúdo principal deve vir * depois * dessas tags -->
+    <title>SITE EAD TESTE!</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
+    <!-- Font Awesome -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">    
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/> 
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen" /> 
+    <!-- Animate css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css"/> 
+    <!-- Progress bar  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-progressbar-3.3.4.css"/> 
+     <!-- Theme color -->
+    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
+
+    <!-- Estilo principal -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Fonte -->
+
+    <!-- Fonte de corpo aberto,livre... -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Lato for Title -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>    
+    
+   
+  </head>
+  <body>
+  
+  <!-- PRÉ-CARREGADOR -->
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+  <!-- FIM -->
+
+  <!-- BOTÃO TOP DE ROLAMENTO -->
+  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+  <!-- BOTÃO SUPERIOR DO ROLAMENTO FIM -->
+
+  <!-- Cabeçalho de início -->
+  <header id="header">
+    <!-- Busca superior do cabeçalho -->
+    <div class="header-top">
+      <div class="container">
+        <form action="">
+          <div id="search">
+          <input type="text" placeholder="Digite sua palavra-chave de pesquisa aqui e pressione Enter ..." name="s" id="m_search" style="display: inline-block;">
+          <button type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+        </form>
+      </div>
+    </div>
+    <!-- header bottom -->
+    <div class="header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="header-contact">
+              <ul>
+                <li>
+                  <div class="phone">
+                    <i class="fa fa-phone"></i>
+                    +55 (41) 99999999
+                  </div>
+                </li>
+                <li>
+                  <div class="mail">
+                    <i class="fa fa-envelope"></i>
+                    teste@teste.com
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="header-login">
+              <a class="login modal-form" data-target="#login-form" data-toggle="modal" href="#">Login / Inscrever-se</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Cabeçalho final -->
+  
+  <!-- Inicio da Janela de Login (modal) -->
+  <div aria-hidden="false" role="dialog" tabindex="-1" id="login-form" class="modal leread-modal fade in">
+    <div class="modal-dialog">
+      <!-- Start login section -->
+      <div id="login-content" class="modal-content">
+        <div class="modal-header">
+          <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title"><i class="fa fa-unlock-alt"></i>Login</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="Seu nome" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Senha" class="form-control">
+            </div>
+             <div class="loginbox">
+              <label><input type="checkbox"><span>Lembrar-me</span></label>
+              <button class="btn signin-btn" type="button">ENTRAR</button>
+            </div>                    
+          </form>
+        </div>
+        <div class="modal-footer footer-box">
+          <a href="#">Esqueceu a senha ?</a>
+          <span>Sem conta? <a id="signup-btn" href="#">Inscrever-se. </a></span>            
+        </div>
+      </div>
+      <!-- Iniciar sessão de inscrição -->
+      <div id="signup-content" class="modal-content">
+        <div class="modal-header">
+          <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title"><i class="fa fa-lock"></i>Cadastro</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input placeholder="Nome" class="form-control">
+            </div>
+            <div class="form-group">
+              <input placeholder="Sobrenome" class="form-control">
+            </div>
+            <div class="form-group">
+              <input placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Senha" class="form-control">
+            </div>
+            <div class="signupbox">
+              <span>Já tem conta? <a id="login-btn" href="#">Cadastrar.</a></span>
+            </div>
+            <div class="loginbox">
+              <label><input type="checkbox"><span>Relembrar-me</span><i class="fa"></i></label>
+              <button class="btn signin-btn" type="button">INSCREVER-SE</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End login modal window -->
+
+  <!-- BEGIN MENU -->
+  <section id="menu-area">      
+    <nav class="navbar navbar-default" role="navigation">  
+      <div class="container">
+        <div class="navbar-header">
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- LOGO -->              
+          <!-- TEXT BASED LOGO -->
+          <a class="navbar-brand" href="index.html">EAD - INTERATIVO</a>              
+          <!-- IMG BASED LOGO  -->
+           <!-- CASO DESEJAR COLOCAR UMA LOGO APAGAR ESTA LINHA DO CODIGO 174 E INCLUIR ESSA: <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="logo"></a> -->
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+            <li class="active"><a href="index.html">Inicio</a></li>
+            <li><a href="feature.html">CARACTERÍSTICAS</a></li>
+            <li><a href="service.html">CURSOS</a></li>
+        <!-- pagina extra que pode ser inclusa atraves de uma conversa em grupo, caso queiram, pesquisem o que é um portifolio etc.    <li><a href="portfolio.html">Portfolio</a></li> -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="blog-archive.html">Arquivo do Blog</a></li>                
+                  
+              
+                </ul>
+            </li>
+          <!-- Pagina de teste caso de algum erro ou link quebrado, é possivel já utilizar este link abaixo com o pack da pagina.
+<li><a href="404.html">404 Page</a></li>     -->          
+            <li><a href="contact.html">Contato</a></li>
+          </ul>                     
+        </div><!--/.nav-collapse -->
+        <a href="#" id="search-icon">
+          <i class="fa fa-search">            
+          </i>
+        </a>
+      </div>     
+    </nav>
+  </section>
+  <!-- FIM MENU --> 
+
+  <!-- Start slider -->
+  <section id="slider">
+    <div class="main-slider">
+      <div class="single-slide">
+        <img src="assets/images/Experiência-prática.jpg" alt="img">
+        <div class="slide-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <div class="slide-article">
+                  <h1 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">EAD - INTERATIVO </h1>
+                  <p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.75s">novas atualizações iram aparecer no site, fiquem ligados...</p>
+                  <a class="read-more-btn wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s" href="#">Leia mais...</a>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="slider-img wow fadeInUp">
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-slide">
+        <img src="assets/images/Aulas-Particulares.jpg" alt="img">
+        <div class="slide-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <div class="slide-article">
+                  <h1 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">A nova experiencia em aulas em EAD</h1>
+                  <p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.75s">logo mais informações...</p>
+                  <a class="read-more-btn wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s" href="#">Leia mais...</a>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="slider-img wow fadeInUp">
+                 <!-- exemplo de imagem flutuante para futuro teste em desing <img src="assets/images/person2.png" alt="business man"> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>          
+    </div>
+  </section>
+  <!-- End slider -->
+
+  <!-- Start Feature -->
+  <section id="feature">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title-area">
+            <h2 class="title">Características</h2>
+            <span class="line"></span>
+            <p>O técnico em informática é um profissional com formação para atuar em diversas frentes da área de tecnologia da informação (TI), seja em empresas especializadas ou seja nos departamentos de TI de empresas dos mais variados portes e ramos de atuação. Se você está pensando em fazer um curso técnico em informática, saiba que está fazendo uma boa escolha, pois a tecnologia é um mercado de trabalho que não para de crescer no Brasil. Agora, se você tem alguma dúvida relativa à grade curricular do curso, acompanhe nos tópicos a seguir e veja o quanto esta formação é dinâmica e interessante!</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="feature-content">
+            <div class="row">
+              <div class="col-md-4 col-sm-6">
+                <div class="single-feature wow zoomIn">
+                  <i class="fa fa-leaf feature-icon"></i>
+                  <h4 class="feat-title">Duração de 2,5 anos</h4>
+                  <p>Aqui você não precisa fazer matérias que não sejam estritamente de formação para você atuar no mercado de trabalho.
+Curta duração: Um dos grandes diferenciais da proposta do EAD - INTERATIVO é formar profissionais com qualidade e foco. São 36 meses com uma proposta inovadora. Com esses diferenciais nós ensinamos o que o aluno realmente precisa com foco e objetividade durante o curso.</p>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="single-feature wow zoomIn">
+                  <i class="fa fa-mobile feature-icon"></i>
+                  <h4 class="feat-title">Diferenciais Inovadores</h4>
+                  <p>Temos alguns diferenciais que vão transformar a vida dos nossos alunos, que precisam se sentir desafiados constantemente com uma proposta inovadora de ensino.
+
+</p>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="single-feature wow zoomIn">
+                  <i class="fa fa-code feature-icon"></i>
+                  <h4 class="feat-title">Você vai aprender</h4>
+                  <p>Desenvolver e fazer manutenção de sistemas em Java (JSE, JEE, JME) e Microsoft .NET/C#, utilizando análise orientada a objetos (UML), banco de dados relacionais (Oracle, DB2, PostgreSQL, SQL Server e MySQL.
+Criar aplicações para Internet utilizando padrões, frameworks e linguagem para desenvolvimento WEB (JSF, JSP, JSTL, HTML, XHTML, XML, JavaScript e jQuery).
+</p>
+                </div>
+              </div>
+           <!--   <div class="col-md-4 col-sm-6">
+                <div class="single-feature wow zoomIn">
+                  <i class="fa fa-gears feature-icon"></i>
+                  <h4 class="feat-title">Multiple Options</h4>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                </div>
+              </div> -->
+             <!-- <div class="col-md-4 col-sm-6">
+                <div class="single-feature wow zoomIn">
+                  <i class="fa fa-code feature-icon"></i>
+                  <h4 class="feat-title">Quality Code</h4>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                </div>
+              </div> -->
+            <!--  <div class="col-md-4 col-sm-6">
+                <div class="single-feature wow zoomIn">
+                  <i class="fa fa-smile-o feature-icon"></i>
+                  <h4 class="feat-title">Awesome Support</h4>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Feature -->
+
+  <!-- Começar sobre  -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title-area">
+            <h2 class="title">Sobre nos</h2>
+            <span class="line"></span>
+            <p>Somos 3 alunos com objetivo de fazer uma mudança em algumas areas no ensino em EAD, este site é uma base ficticia, os reais motivo de realizar este projeto sera explicado em sala dentro da instituição, Guilherme, Mateus e Murilo, somos os responsaveis em realizar a parte teorica e pratica deste projeto...</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="about-content">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="our-skill">
+                  <h3>Nossas Habilidades</h3>                  
+                  <div class="our-skill-content">
+                  <p>ATENÇÃO TODOS OS DADOS SÃO FICTICIOS!</p>
+                    <div class="progress">
+                      <div class="progress-bar six-sec-ease-in-out" role="progressbar" data-transitiongoal="100">
+                        <span class="progress-title">Web - Desing</span>
+                      </div>
+                  </div>
+                  <div class="progress">
+                      <div class="progress-bar six-sec-ease-in-out" role="progressbar" data-transitiongoal="85">
+                        <span class="progress-title">Desenvolvimento de Sistemas</span>
+                      </div>
+                  </div>
+                  <div class="progress">
+                      <div class="progress-bar six-sec-ease-in-out" role="progressbar" data-transitiongoal="70">
+                        <span class="progress-title">GTI</span>
+                      </div>
+                  </div>
+                  <div class="progress">
+                      <div class="progress-bar six-sec-ease-in-out" role="progressbar" data-transitiongoal="60">
+                        <span class="progress-title">JOGOS MOBILE</span>
+                      </div>
+                  </div>
+                  <div class="progress">
+                      <div class="progress-bar six-sec-ease-in-out" role="progressbar" data-transitiongoal="40">
+                        <span class="progress-title">Programação</span>
+                      </div>
+                  </div>
+                   <div class="progress">
+                      <div class="progress-bar six-sec-ease-in-out" role="progressbar" data-transitiongoal="25">
+                        <span class="progress-title">Java</span>
+                      </div>
+                  </div>
+                  </div>                  
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="why-choose-us">
+                  <h3>Porque escolher-nos?</h3>
+                  <div class="panel-group why-choose-group" id="accordion">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                            Guilherme Simoes <span class="fa fa-minus-square"></span>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                        <img class="why-choose-img" src="assets/images/FOTO.jpg" alt="img">
+                         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at risus lorem. Aenean consequat eleifend odio, sed laoreet justo vulputate in. Cras eget libero mi. Maecenas hendrerit quam tincidunt, laoreet justo non, consectetur ante. Phasellus rutrum porttitor cursus. Ut ornare risus urna, a volutpat turpis mattis id. Quisque gravida, massa at luctus efficitur, odio mauris viverra nibh, non posuere urna erat sit amet justo. Aliquam suscipit, enim eu suscipit gravida, velit lorem imperdiet eros, ut sagittis quam massa vitae mauris. Phasellus elementum turpis arcu, sit amet sagittis neque lacinia a. Aenean at nunc pellentesque, vulputate dui faucibus, laoreet mauris.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default ">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                            Codificação de Qualidade <span class="fa fa-plus-square"></span>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at risus lorem. Aenean consequat eleifend odio, sed laoreet justo vulputate in. Cras eget libero mi. Maecenas hendrerit quam tincidunt, laoreet justo non, consectetur ante. Phasellus rutrum porttitor cursus. Ut ornare risus urna, a volutpat turpis mattis id. Quisque gravida, massa at luctus efficitur, odio mauris viverra nibh, non posuere urna erat sit amet justo. Aliquam suscipit, enim eu suscipit gravida, velit lorem imperdiet eros, ut sagittis quam massa vitae mauris. Phasellus elementum turpis arcu, sit amet sagittis neque lacinia a. Aenean at nunc pellentesque, vulputate dui faucibus, laoreet mauris.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                            Melhor Suporte <span class="fa fa-plus-square"></span>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at risus lorem. Aenean consequat eleifend odio, sed laoreet justo vulputate in. Cras eget libero mi. Maecenas hendrerit quam tincidunt, laoreet justo non, consectetur ante. Phasellus rutrum porttitor cursus. Ut ornare risus urna, a volutpat turpis mattis id. Quisque gravida, massa at luctus efficitur, odio mauris viverra nibh, non posuere urna erat sit amet justo. Aliquam suscipit, enim eu suscipit gravida, velit lorem imperdiet eros, ut sagittis quam massa vitae mauris. Phasellus elementum turpis arcu, sit amet sagittis neque lacinia a. Aenean at nunc pellentesque, vulputate dui faucibus, laoreet mauris..</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end about -->
+
+  <!-- Start counter -->
+  <section id="counter">
+    <div class="counter-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="counter-area">
+              <div class="row">
+                <!-- Start single counter 
+                <div class="col-md-3 col-sm-6">
+                  <div class="single-counter">
+                    <div class="counter-icon">
+                      <i class="fa fa-suitcase"></i>
+                    </div>
+                    <div class="counter-no counter">
+                      1275
+                    </div>
+                    <div class="counter-label">
+                      Projects
+                    </div>
+                  </div>
+                </div>
+                <!-- End single counter -->
+                <!-- Start single counter 
+                <div class="col-md-3 col-sm-6">
+                  <div class="single-counter">
+                    <div class="counter-icon">
+                      <i class="fa fa-clock-o"></i>
+                    </div>
+                    <div class="counter-no counter">
+                      5275
+                    </div>
+                    <div class="counter-label">
+                      Hours Work
+                    </div>
+                  </div>
+                </div>
+                <!-- End single counter -->
+                <!-- Start single counter 
+                <div class="col-md-3 col-sm-6">
+                 <div class="single-counter">
+                    <div class="counter-icon">
+                      <i class="fa fa-trophy"></i>
+                    </div>
+                    <div class="counter-no counter">
+                      350
+                    </div>
+                    <div class="counter-label">
+                      Awards
+                    </div>
+                  </div>
+                </div>
+                <!-- End single counter
+                <!-- Start single counter 
+                <div class="col-md-3 col-sm-6">
+                  <div class="single-counter">
+                    <div class="counter-icon">
+                      <i class="fa fa-users"></i>
+                    </div>
+                    <div class="counter-no counter">
+                      875
+                    </div>
+                    <div class="counter-label">
+                      Clients
+                    </div>
+                  </div>
+                </div>
+                <!-- End single counter -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End counter -->
+
+
+  <!-- Start Service --
+  <section id="service">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title-area">
+            <h2 class="title">Nossos serviços</h2>
+            <span class="line"></span>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="service-content">
+            <div class="row">
+              <!-- Start single service --
+              <div class="col-md-4 col-sm-6">
+                <div class="single-service wow zoomIn">
+                  <i class="fa fa-desktop service-icon"></i>
+                  <h4 class="service-title">Web Development</h4>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                </div>
+              </div>
+              <!-- End single service -->
+              <!-- Start single service --
+              <div class="col-md-4 col-sm-6">
+                <div class="single-service wow zoomIn">
+                  <i class="fa fa-paw service-icon"></i>
+                  <h4 class="service-title">Digital Design</h4>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                </div>
+              </div>
+              <!-- End single service -->
+              <!-- Start single service --
+              <div class="col-md-4 col-sm-6">
+                <div class="single-service wow zoomIn">
+                  <i class="fa fa-magic service-icon"></i>
+                  <h4 class="service-title">Marketing</h4>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                </div>
+              </div>
+              <!-- End single service -->
+              <!-- Start single service --
+              <div class="col-md-4 col-sm-6">
+                <div class="single-service wow zoomIn">
+                  <i class="fa fa-shopping-cart service-icon"></i>
+                  <h4 class="service-title">E-commerce</h4>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                </div>
+              </div>
+              <!-- End single service -->
+              <!-- Start single service --
+              <div class="col-md-4 col-sm-6">
+                <div class="single-service wow zoomIn">
+                  <i class="fa fa-mobile service-icon"></i>
+                  <h4 class="service-title">App Development</h4>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                </div>
+              </div>
+              <!-- End single service -->
+              <!-- Start single service --
+              <div class="col-md-4 col-sm-6">
+                <div class="single-service wow zoomIn">
+                  <i class="fa fa-rocket service-icon"></i>
+                  <h4 class="service-title">S.E.O</h4>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                </div>
+              </div>
+              <!-- End single service  CODIGO SERA UTILIZADO NO FUTURO NÃO RETIRAR!!! --> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Service -->
+
+  <!-- inicio tabela de valores -->
+  <section id="pricing-table">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title-area">
+            <h2 class="title">VALORES DOS CURSOS EM DESTAQUE</h2>
+            <span class="line"></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum bibendum arcu id varius. Praesent venenatis arcu orci, vestibulum tempus tortor sagittis ac. Donec convallis ultricies vulputate. Proin tristique arcu vel cursus venenatis. Curabitur vehicula pharetra sapien quis rutrum. Donec luctus sit amet mi at dictum. Duis eget metus sit amet neque convallis hendrerit eget vel lectus. Cras lobortis vitae nulla sed dictum. Donec rutrum lorem et ex condimentum iaculis. Maecenas bibendum elementum ornare. Nullam vel ligula orci. In orci sem, ultrices sed facilisis sed, eleifend et risus. Mauris ut ante at lacus congue pharetra sed nec turpis. Aenean ex urna, pulvinar sit amet venenatis a, laoreet eget tortor.
+
+</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="pricing-table-content">
+            <div class="row">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="single-table-price wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                  <div class="price-header">
+                    <span class="price-title">Ánalise e Desenvolvimento de Sistemas</span>
+                    <div class="price">
+                      <sup class="price-up">R$</sup>
+                      550
+                      <span class="price-down">/reais</span>
+                    </div>
+                  </div>
+                  <div class="price-article">
+                    <ul>
+                      <li>Desenvolvimento Responsivo para WEB</li>
+                      <li>Fundamentos de TI</li>
+                      <li>Modelagem de Negócio</li>
+                      <li>Raciocínio Lógico</li>
+                      <li>Redes de Computadores Algoritmos</li>
+                    </ul>
+                  </div>
+                  <div class="price-footer">
+                    <a class="purchase-btn" href="#">Cadastrar</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="single-table-price wow fadeInUp" data-wow-duration="0.75s" data-wow-delay="0.75s">
+                  <div class="price-header">
+                    <span class="price-title">Gestão de Tecnologia da Informação</span>
+                    <div class="price">
+                      <sup class="price-up">R$</sup>
+                      460
+                      <span class="price-down">/reais</span>
+                    </div>
+                  </div>
+                  <div class="price-article">
+                    <ul>
+                      <li>Comportamento Organizacional</li>
+                      <li>Fundamentos de Redes</li>
+                      <li>Fundamentos de TI</li>
+                      <li>Gestão de Serviços</li>
+                      <li>Banco de Dados</li>
+                    </ul>
+                  </div>
+                  <div class="price-footer">
+                    <a class="purchase-btn" href="#">Cadastrar</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="single-table-price featured-price wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                  <div class="price-header">
+                    <span class="price-title">Desenvolvimento Android</span>
+                    <div class="price">
+                      <sup class="price-up">R$</sup>
+                      300
+                      <span class="price-down">/reais</span>
+                    </div>
+                  </div>
+                  <div class="price-article">
+                    <ul>
+                      <li>Crie sua própria app mobile
+</li>
+                      <li>Conheça os principais componentes do Android
+</li>
+                      <li>Desenvolva dentro do Android Studio
+</li>
+                      <li>Persista e leia informações da base de dados
+</li>
+                      <li>Entenda o ciclo de vida das telas no Android
+</li>
+                    </ul>
+                  </div>
+                  <div class="price-footer">
+                    <a class="purchase-btn" href="#">cadastrar</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="single-table-price wow fadeInUp" data-wow-duration="1.15s" data-wow-delay="1.15s">
+                  <div class="price-header">
+                    <span class="price-title">WEB 
+DESIGNER</span>
+                    <div class="price">
+                      <sup class="price-up">R$</sup>
+                      780
+                      <span class="price-down">/Reais</span>
+                    </div>
+                  </div>
+                  <div class="price-article">
+                    <ul>
+                      <li>Fireworks CS5</li>
+                      <li>Flash CS5.5</li>
+                        <li>HTML5</li>
+                        <li>Dreamweaver CS5.5</li>
+                    </ul>
+                  </div>
+                  <div class="price-footer">
+                    <a class="purchase-btn" href="#">cadastrar</a>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Pricing table -->  
+
+  <!-- TABELA DA EQUIPE  --
+  <section id="our-team">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title-area">
+            <h2 class="title">Our Team</h2>
+            <span class="line"></span>
+            <p>ALTERAR E COLOCAR AS FOTOS DOS PARTICIPANTES DO PROJETO </p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="our-team-content">
+            <div class="row">
+              <!-- Start single team member --
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="single-team-member">
+                 <div class="team-member-img">
+                   <img src="assets/images/team-member-2.png" alt="team member img">
+                 </div>
+                 <div class="team-member-name">
+                   <p>John Doe</p>
+                   <span>CEO</span>
+                 </div>
+                 <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                 <div class="team-member-link">
+                   <a href="#"><i class="fa fa-facebook"></i></a>
+                   <a href="#"><i class="fa fa-twitter"></i></a>
+                   <a href="#"><i class="fa fa-linkedin"></i></a>
+                 </div>
+                </div>
+              </div>
+              <!-- Start single team member -->
+              <!-- Start single team member --
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="single-team-member">
+                 <div class="team-member-img">
+                   <img src="assets/images/team-member-1.png" alt="team member img">
+                 </div>
+                 <div class="team-member-name">
+                   <p>Bernice Neumann</p>
+                   <span>Designer</span>
+                 </div>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at risus lorem. Aenean consequat eleifend odio, sed laoreet justo vulputate in. Cras eget libero mi. Maecenas hendrerit quam tincidunt, laoreet justo non, consectetur ante. Phasellus rutrum porttitor cursus. Ut ornare risus urna, a volutpat turpis mattis id. Quisque gravida, massa at luctus efficitur, odio mauris viverra nibh, non posuere urna erat sit amet justo. Aliquam suscipit, enim eu suscipit gravida, velit lorem imperdiet eros, ut sagittis quam massa vitae mauris. Phasellus elementum turpis arcu, sit amet sagittis neque lacinia a. Aenean at nunc pellentesque, vulputate dui faucibus, laoreet mauris.
+
+.</p>
+                 <div class="team-member-link">
+                   <a href="#"><i class="fa fa-facebook"></i></a>
+                   <a href="#"><i class="fa fa-twitter"></i></a>
+                   <a href="#"><i class="fa fa-linkedin"></i></a>
+                 </div>
+                </div>
+              </div>
+              <!-- Start single team member -->
+              <!-- Start single team member --
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="single-team-member">
+                 <div class="team-member-img">
+                   <img src="assets/images/team-member-3.png" alt="team member img">
+                 </div>
+                 <div class="team-member-name">
+                   <p>Dvid Cameron</p>
+                   <span>Developer</span>
+                 </div>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at risus lorem. Aenean consequat eleifend odio, sed laoreet justo vulputate in. Cras eget libero mi. Maecenas hendrerit quam tincidunt, laoreet justo non, consectetur ante. Phasellus rutrum porttitor cursus. Ut ornare risus urna, a volutpat turpis mattis id. Quisque gravida, massa at luctus efficitur, odio mauris viverra nibh, non posuere urna erat sit amet justo. Aliquam suscipit, enim eu suscipit gravida, velit lorem imperdiet eros, ut sagittis quam massa vitae mauris. Phasellus elementum turpis arcu, sit amet sagittis neque lacinia a. Aenean at nunc pellentesque, vulputate dui faucibus, laoreet mauris.
+
+.</p>
+                 <div class="team-member-link">
+                   <a href="#"><i class="fa fa-facebook"></i></a>
+                   <a href="#"><i class="fa fa-twitter"></i></a>
+                   <a href="#"><i class="fa fa-linkedin"></i></a>
+                 </div>
+                </div>
+              </div>
+              <!-- Start single team member -->
+              <!-- Start single team member --
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="single-team-member">
+                 <div class="team-member-img">
+                   <img src="assets/images/team-member-1.png" alt="team member img">
+                 </div>
+                 <div class="team-member-name">
+                   <p>Bernice Neumann</p>
+                   <span>Designer</span>
+                 </div>
+                 <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                 <div class="team-member-link">
+                   <a href="#"><i class="fa fa-facebook"></i></a>
+                   <a href="#"><i class="fa fa-twitter"></i></a>
+                   <a href="#"><i class="fa fa-linkedin"></i></a>
+                 </div>
+                </div>
+              </div>
+              <!-- Start single team member --
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Pricing table -->
+  
+  <!-- Start Testimonial section -->
+  <section id="testimonial">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="title-area">
+                <h2 class="title">COMENTARIO DOS CLIENTES:</h2>
+                <span class="line"></span>           
+              </div>
+            </div>
+            <div class="col-md-12">
+              <!-- Start testimonial slider -->
+              <div class="testimonial-slider">
+                <!-- Start single slider -->
+                <div class="single-slider">
+                  <div class="testimonial-img">
+                    <img src="assets/images/FOTO.jpg" alt="testimonial image">
+                  </div>
+                  <div class="testimonial-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at risus lorem. Aenean consequat eleifend odio, sed laoreet justo vulputate in. Cras eget libero mi. Maecenas hendrerit quam tincidunt, laoreet justo non, consectetur ante. Phasellus rutrum porttitor cursus. Ut ornare risus urna, a volutpat turpis mattis id. Quisque gravida, massa at luctus efficitur, odio mauris viverra nibh, non posuere urna erat sit amet justo. Aliquam suscipit, enim eu suscipit gravida, velit lorem imperdiet eros, ut sagittis quam massa vitae mauris. Phasellus elementum turpis arcu, sit amet sagittis neque lacinia a. Aenean at nunc pellentesque, vulputate dui faucibus, laoreet mauris.
+
+.</p>
+                    <h6>GUILHERME SIMOES, <span>Designer</span></h6>
+                  </div>
+                </div>
+                <!-- Start single slider -->
+                <div class="single-slider">
+                  <div class="testimonial-img">
+                    <img src="assets/images/FOTO.jpg" alt="testimonial image">
+                  </div>
+                  <div class="testimonial-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at risus lorem. Aenean consequat eleifend odio, sed laoreet justo vulputate in. Cras eget libero mi. Maecenas hendrerit quam tincidunt, laoreet justo non, consectetur ante. Phasellus rutrum porttitor cursus. Ut ornare risus urna, a volutpat turpis mattis id. Quisque gravida, massa at luctus efficitur, odio mauris viverra nibh, non posuere urna erat sit amet justo. Aliquam suscipit, enim eu suscipit gravida, velit lorem imperdiet eros, ut sagittis quam massa vitae mauris. Phasellus elementum turpis arcu, sit amet sagittis neque lacinia a. Aenean at nunc pellentesque, vulputate dui faucibus, laoreet mauris.
+
+.</p>
+                     <h6>GUILHERME SIMOES, <span>Designer</span></h6>
+                  </div>
+                </div>
+                <!-- Start single slider -->
+                <div class="single-slider">
+                  <div class="testimonial-img">
+                    <img src="assets/images/FOTO.jpg" alt="testimonial image">
+                  </div>
+                  <div class="testimonial-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at risus lorem. Aenean consequat eleifend odio, sed laoreet justo vulputate in. Cras eget libero mi. Maecenas hendrerit quam tincidunt, laoreet justo non, consectetur ante. Phasellus rutrum porttitor cursus. Ut ornare risus urna, a volutpat turpis mattis id. Quisque gravida, massa at luctus efficitur, odio mauris viverra nibh, non posuere urna erat sit amet justo. Aliquam suscipit, enim eu suscipit gravida, velit lorem imperdiet eros, ut sagittis quam massa vitae mauris. Phasellus elementum turpis arcu, sit amet sagittis neque lacinia a. Aenean at nunc pellentesque, vulputate dui faucibus, laoreet mauris.
+
+.</p>
+                    <h6>GUILHERME SIMOES, <span>Designer</span></h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6"></div>        
+      </div>
+    </div>
+  </section>
+  <!-- End Testimonial section -->
+
+  <!-- Start Clients brand --
+  <section id="clients-brand">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="clients-brand-area">
+            <ul class="clients-brand-slide">
+              <li class="col-md-3">
+                <div class="single-brand">
+                  <img src="assets/images/amazon.png" alt="img">
+                </div>
+              </li>
+              <li class="col-md-3">
+                <div class="single-brand">
+                  <img src="assets/images/discovery.png" alt="img">
+                </div>
+              </li>
+              <li class="col-md-3">
+                <div class="single-brand">
+                  <img src="assets/images/envato.png" alt="img">
+                </div>
+              </li>
+              <li class="col-md-3">
+                <div class="single-brand">
+                  <img src="assets/images/tuenti.png" alt="img">
+                </div>
+              </li>
+               <li class="col-md-3">
+                <div class="single-brand">
+                  <img src="assets/images/amazon.png" alt="img">
+                </div>
+              </li>
+              <li class="col-md-3">
+                <div class="single-brand">
+                  <img src="assets/images/discovery.png" alt="img">
+                </div>
+              </li>
+              <li class="col-md-3">
+                <div class="single-brand">
+                  <img src="assets/images/envato.png" alt="img">
+                </div>
+              </li>
+              <li class="col-md-3">
+                <div class="single-brand">
+                  <img src="assets/images/tuenti.png" alt="img">
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Clients brand -->
+
+  <!-- Start latest news -->
+  <section id="latest-news">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title-area">
+            <h2 class="title">Ultimas noticias do Blog</h2>
+            <span class="line"></span>
+            <p>Esta area do site sera aonde vamos por as ultimas noticias dele, relacionado a conteudos da internet, noticias da instituição. Sera um blog, pessoas podem comentar e tirar duvidas de conteudos relacionado ao post.</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="latest-news-content">
+            <div class="row">
+              <!-- start single latest news -->
+              <div class="col-md-4">
+                <article class="blog-news-single">
+                  <div class="blog-news-img">
+                    <a href="blog-single-with-right-sidebar.html"><img src="assets/images/blog-img-1.jpg" alt="image"></a>
+                  </div>
+                  <div class="blog-news-title">
+                    <h2><a href="blog-single-with-right-sidebar.html">TITULO</a></h2>
+                    <p>By <a class="blog-author" href="#">GUILHERME</a> <span class="blog-date">|19 de novembro de 2018</span></p>
+                  </div>
+                  <div class="blog-news-details">
+                    <p>Mauris consectetur convallis ex at porta. Integer bibendum tincidunt nulla, ac vulputate lorem blandit id. Sed dapibus ex lacus, sit amet efficitur quam condimentum nec. Maecenas et suscipit lectus. Etiam vehicula, mauris at laoreet ultrices, lacus ligula consectetur metus, a sodales sapien felis blandit erat. Nunc eget hendrerit nulla, ut dignissim mi. Nam et ante orci. Aliquam aliquam pretium urna a lacinia. Phasellus egestas auctor diam, eu porttitor arcu placerat vel. Aliquam posuere augue lectus, a sodales turpis porttitor eget. Praesent non rutrum lacus, eget aliquet tortor. Integer vitae accumsan metus, quis aliquam nunc.
+
+</p>
+                    <a class="blog-more-btn" href="blog-single-with-right-sidebar.html">LEIA MAIS <i class="fa fa-long-arrow-right"></i></a>
+                  </div>
+                </article>
+              </div>
+              <!-- start single latest news -->
+              <div class="col-md-4">
+                <article class="blog-news-single">
+                  <div class="blog-news-img">
+                    <a href="blog-single-with-right-sidebar.html"><img src="assets/images/blog-img-2.jpg" alt="image"></a>
+                  </div>
+                  <div class="blog-news-title">
+                    <h2><a href="blog-single-with-right-sidebar.html">TITULO</a></h2>
+                    <p>By <a class="blog-author" href="#">GUILHERME SIMOES</a> <span class="blog-date">|19 de novembro de 2018</span></p>
+                  </div>
+                  <div class="blog-news-details">
+                    <p>Mauris consectetur convallis ex at porta. Integer bibendum tincidunt nulla, ac vulputate lorem blandit id. Sed dapibus ex lacus, sit amet efficitur quam condimentum nec. Maecenas et suscipit lectus. Etiam vehicula, mauris at laoreet ultrices, lacus ligula consectetur metus, a sodales sapien felis blandit erat. Nunc eget hendrerit nulla, ut dignissim mi. Nam et ante orci. Aliquam aliquam pretium urna a lacinia. Phasellus egestas auctor diam, eu porttitor arcu placerat vel. Aliquam posuere augue lectus, a sodales turpis porttitor eget. Praesent non rutrum lacus, eget aliquet tortor. Integer vitae accumsan metus, quis aliquam nunc.
+
+</p>
+                    <a class="blog-more-btn" href="blog-single-with-right-sidebar.html">LEIA MAIS <i class="fa fa-long-arrow-right"></i></a>
+                  </div>
+                </article>
+              </div>
+              <!-- start single latest news -->
+              <div class="col-md-4">
+                <article class="blog-news-single">
+                  <div class="blog-news-img">
+                    <a href="blog-single-with-right-sidebar.html"><img src="assets/images/blog-img-3.jpg" alt="image"></a>
+                  </div>
+                  <div class="blog-news-title">
+                    <h2><a href="blog-single-with-right-sidebar.html">TITULO</a></h2>
+                    <p>By <a class="blog-author" href="#">GUILHERME SIMOES</a> <span class="blog-date">|19 de novembro de 2018</span></p>
+                  </div>
+                  <div class="blog-news-details">
+                    <p>Mauris consectetur convallis ex at porta. Integer bibendum tincidunt nulla, ac vulputate lorem blandit id. Sed dapibus ex lacus, sit amet efficitur quam condimentum nec. Maecenas et suscipit lectus. Etiam vehicula, mauris at laoreet ultrices, lacus ligula consectetur metus, a sodales sapien felis blandit erat. Nunc eget hendrerit nulla, ut dignissim mi. Nam et ante orci. Aliquam aliquam pretium urna a lacinia. Phasellus egestas auctor diam, eu porttitor arcu placerat vel. Aliquam posuere augue lectus, a sodales turpis porttitor eget. Praesent non rutrum lacus, eget aliquet tortor. Integer vitae accumsan metus, quis aliquam nunc.
+
+</p>
+                    <a class="blog-more-btn" href="blog-single-with-right-sidebar.html">LEIA MAIS <i class="fa fa-long-arrow-right"></i></a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End latest news -->
+
+  <!-- Start subscribe us -->
+  <section id="subscribe">
+    <div class="subscribe-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="subscribe-area">
+              <h2 class="wow fadeInUp">Receba Atualizações no EMAIL:</h2>
+              <form action="" class="subscrib-form wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                <input type="text" placeholder="Digite seu email...">
+                <button class="subscribe-btn" type="submit">inscrever</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End subscribe us -->
+
+  <!-- Start footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <div class="footer-left">
+            <p>Desenvolvido por <a href="#">Guilherme</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="footer-right">
+            <a href="index.html"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End footer -->
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Bootstrap -->
+  <script src="assets/js/bootstrap.js"></script>
+  <!-- Slick Slider -->
+  <script type="text/javascript" src="assets/js/slick.js"></script>    
+  <!-- mixit slider -->
+  <script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
+  <!-- Add fancyBox -->        
+  <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+ <!-- counter -->
+  <script src="assets/js/waypoints.js"></script>
+  <script src="assets/js/jquery.counterup.js"></script>
+  <!-- Wow animation -->
+  <script type="text/javascript" src="assets/js/wow.js"></script> 
+  <!-- progress bar   -->
+  <script type="text/javascript" src="assets/js/bootstrap-progressbar.js"></script>  
+  
+ 
+  <!-- Custom js -->
+  <script type="text/javascript" src="assets/js/custom.js"></script>
+  
+  </body>
+</html>

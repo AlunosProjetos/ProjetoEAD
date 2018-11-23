@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- As 3 metatags acima * devem * vir em primeiro lugar na cabeça; qualquer outro conteúdo principal deve vir * depois * dessas tags -->
+    <title>SITE EAD TESTE!</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
+    <!-- Font Awesome -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">    
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/> 
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen" /> 
+    <!-- Animate css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css"/> 
+    <!-- Progress bar  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-progressbar-3.3.4.css"/> 
+     <!-- Theme color -->
+    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
+
+    <!-- Estilo principal -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Fonte -->
+
+    <!-- Fonte de corpo aberto,livre... -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Lato for Title -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>    
+    
+   
+  </head>
+  <body>
+  
+  <!-- PRÉ-CARREGADOR -->
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+  <!-- FIM -->
+
+  <!-- BOTÃO TOP DE ROLAMENTO -->
+  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+  <!-- BOTÃO SUPERIOR DO ROLAMENTO FIM -->
+
+  <!-- Cabeçalho de início -->
+  <header id="header">
+    <!-- Busca superior do cabeçalho -->
+    <div class="header-top">
+      <div class="container">
+        <form action="">
+          <div id="search">
+          <input type="text" placeholder="Digite sua palavra-chave de pesquisa aqui e pressione Enter ..." name="s" id="m_search" style="display: inline-block;">
+          <button type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+        </form>
+      </div>
+    </div>
+    <!-- header bottom -->
+    <div class="header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="header-contact">
+              <ul>
+                <li>
+                  <div class="phone">
+                    <i class="fa fa-phone"></i>
+                    +55 (41) 99999999
+                  </div>
+                </li>
+                <li>
+                  <div class="mail">
+                    <i class="fa fa-envelope"></i>
+                    teste@teste.com
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="header-login">
+              <a class="login modal-form" data-target="#login-form" data-toggle="modal" href="#">Login / Inscrever-se</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Cabeçalho final -->
+  
+  <!-- Inicio da Janela de Login (modal) -->
+  <div aria-hidden="false" role="dialog" tabindex="-1" id="login-form" class="modal leread-modal fade in">
+    <div class="modal-dialog">
+      <!-- Start login section -->
+      <div id="login-content" class="modal-content">
+        <div class="modal-header">
+          <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title"><i class="fa fa-unlock-alt"></i>Login</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="Seu nome" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Senha" class="form-control">
+            </div>
+             <div class="loginbox">
+              <label><input type="checkbox"><span>Lembrar-me</span></label>
+              <button class="btn signin-btn" type="button">ENTRAR</button>
+            </div>                    
+          </form>
+        </div>
+        <div class="modal-footer footer-box">
+          <a href="#">Esqueceu a senha ?</a>
+          <span>Sem conta? <a id="signup-btn" href="#">Inscrever-se. </a></span>            
+        </div>
+      </div>
+      <!-- Iniciar sessão de inscrição -->
+      <div id="signup-content" class="modal-content">
+        <div class="modal-header">
+          <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title"><i class="fa fa-lock"></i>Cadastro</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input placeholder="Nome" class="form-control">
+            </div>
+            <div class="form-group">
+              <input placeholder="Sobrenome" class="form-control">
+            </div>
+            <div class="form-group">
+              <input placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Senha" class="form-control">
+            </div>
+            <div class="signupbox">
+              <span>Já tem conta? <a id="login-btn" href="#">Cadastrar.</a></span>
+            </div>
+            <div class="loginbox">
+              <label><input type="checkbox"><span>Relembrar-me</span><i class="fa"></i></label>
+              <button class="btn signin-btn" type="button">INSCREVER-SE</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End login modal window -->
+
+  <!-- BEGIN MENU -->
+  <section id="menu-area">      
+    <nav class="navbar navbar-default" role="navigation">  
+      <div class="container">
+        <div class="navbar-header">
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- LOGO -->              
+          <!-- TEXT BASED LOGO -->
+          <a class="navbar-brand" href="index.html">EAD - INTERATIVO</a>              
+          <!-- IMG BASED LOGO  -->
+           <!-- CASO DESEJAR COLOCAR UMA LOGO APAGAR ESTA LINHA DO CODIGO 174 E INCLUIR ESSA: <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="logo"></a> -->
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+            <li class="active"><a href="index.html">Inicio</a></li>
+            <li><a href="feature.html">CARACTERÍSTICAS</a></li>
+            <li><a href="service.html">CURSOS</a></li>
+        <!-- pagina extra que pode ser inclusa atraves de uma conversa em grupo, caso queiram, pesquisem o que é um portifolio etc.    <li><a href="portfolio.html">Portfolio</a></li> -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="blog-archive.html">Arquivo do Blog</a></li>                
+                <li><a href="blog-single-with-left-sidebar.html"> Com a barra lateral esquerda</a></li>
+            
+                  <!--   PARA ENTENDER ESTÁ LINHA, FOI CRIADO 3 ESTILOS DE PAGINA, SIMPLES COM BARRA LATERAL ESQUERDA E DIREITA OU SEM BARRA, PARA ASSIM A PESSOA ACESSAR O BLOG E TER UMA INTERATIVIDADE MAIOR, COLOQUEI A OPÇÃO DE ESQUERDA PARA TESTES.
+<li><a href="blog-single-with-right-sidebar.html">Blog Único com Barra Lateral Direita</a></li>
+<li><a href="blog-single-with-out-sidebar.html">Blog Único sem Barra Lateral</a></li>    -->       
+              
+                </ul>
+            </li>
+          <!-- Pagina de teste caso de algum erro ou link quebrado, é possivel já utilizar este link abaixo com o pack da pagina.
+<li><a href="404.html">404 Page</a></li>     -->          
+            <li><a href="contact.html">Contato</a></li>
+          </ul>                     
+        </div><!--/.nav-collapse -->
+        <a href="#" id="search-icon">
+          <i class="fa fa-search">            
+          </i>
+        </a>
+      </div>     
+    </nav>
+  </section>
+  <!-- FIM MENU --> 
+  
+  <!-- Start single page header -->
+  <section id="single-page-header">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="single-page-header-left">
+              <h2>Curso de Tecnologia da Informação</h2>
+              <p>Conheça o curso de Gestão em Tecnologia da Informação e veja onde estudar esta graduação que forma profissionais em alta no mercado!
+                                   </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="single-page-header-right">
+              <ol class="breadcrumb">
+                <li><a href="#">Inicio</a></li>
+                <li class="active">Caracteristicas sobre os cursos:</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End single page header -->
+  
+  <!-- Start Feature -->
+  <section id="feature">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title-area">
+            <h2 class="title">Gestão da Tecnologia da Informação</h2>
+            <span class="line"></span>
+            <p>O <b> curso de Gestão da Tecnologia da Informação</b>  é do tipo<b>  tecnológico</b> e dura cerca de dois anos. Há universidades que oferecem o curso nas modalidades presencial e a distância.
+
+Esta é uma graduação que oferece uma formação técnica ao mesmo tempo em que capacita o aluno para ocupar posições estratégicas nas empresas, atuando na gestão do patrimônio tecnológico, análise de níveis de serviço, gestão de recursos humanos e tomada de decisões envolvendo a tecnologia. Trata-se de <b> uma profissão em alta </b> com oportunidades em todos os setores da economia.</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="feature-content">
+            <div class="row">
+              <div class="col-md-4 col-sm-6">
+                <div class="single-feature wow zoomIn">
+                  <i class="fa fa-leaf feature-icon"></i>
+                  <h4 class="feat-title">Tempo:</h4>
+                  <p>O curso Gestão da Tecnologia da Informação é do tipo  <b> tecnológico </b> e pode ser feito em  <b>dois anos. </b>
+
+Como o próprio nome indica, é um curso voltado para a gestão, formando profissionais aptos a ocuparem  <b>cargos gerenciais e estratégicos </b> em qualquer empresa que desenvolva ou utilize tecnologia para operar.</p>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="single-feature wow zoomIn">
+                  <i class="fa fa-mobile feature-icon"></i>
+                  <h4 class="feat-title">A graduação em Gestão da Tecnologia da Informação foca menos em técnicas de programação e mais em aspectos gerenciais, tais como:</h4>
+                
+                    <ul style="list-style-type:square">  
+                      <li>Definição de parâmetros de utilização de sistemas.</li>
+                        <li>Gestão dos recursos humanos envolvidos em operações e projetos de TI.</li>
+                        <li>Controle de níveis de serviço..</li>
+                        <li>Gerenciamento dos sistemas implantados.</li>
+                    </ul>    
+              
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="single-feature wow zoomIn">
+                  <i class="fa fa-thumbs-o-up feature-icon"></i>
+                  <h4 class="feat-title">Caracteristica:</h4>
+                  <p>É um curso destinado a quem já trabalha na área de TI e pretende ocupar um cargo de gestão, ou para quem quer trabalhar na área e busca uma formação de nível superior rápida e de qualidade.
+O curso de Gestão da Tecnologia da Informação é oferecido nos formatos presencial e a distância. Vale lembrar que o diploma obtido em curso EAD reconhecido pelo MEC vale tanto quanto o presencial.</p>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="single-feature wow zoomIn">
+                  <i class="fa fa-gears feature-icon"></i>
+                  <h4 class="feat-title">Grade curricular de Gestão da Tecnologia da Informação</h4>
+                    <p>A grade curricular apresenta algumas disciplinas de programação e das Ciências Exatas, mas a maior parte da carga horária é de matérias ligadas aos aspectos gerenciais e estratégicos de TI. O currículo pode variar de acordo com a instituição que oferece o curso.</p>
+                    <p><b>Entre as principais disciplinas, podemos citar:</b></p>
+                    
+                  <ul style="list-style-type:square">  
+                      <li>Arquitetura e Redes de Computadores.</li>
+                        <li>Banco de Dados.</li>
+                        <li>Custos e Gestão Financeira</li>
+                        <li>Empreendedorismo.</li>
+                        <li>Engenharia de Software.</li>
+                        <li>Ferramentas de Desenvolvimento para Web.</li>
+                        <li>Gestão de Contratos.</li>
+                        <li>Gestão de Infraestrutura de TI.</li>
+                        <li>Gestão de Processos.</li>
+                        <li>Gestão de Projetos.</li>
+                        <li>Gestão de Serviços de TI.</li>
+                        <li>Gestão de Sistemas Corporativos.</li>
+                        <li>Governança de TI.</li>
+                        <li>Negócios Eletrônicos.</li>
+                        <li>Novas Tecnologias</li>
+                        <li>Tecnologia e Organização da Informação</li>
+                    </ul> 
+                    
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="single-feature wow zoomIn">
+                  <i class="fa fa-code feature-icon"></i>
+                  <h4 class="feat-title">Perfil do profissional</h4>
+                  <p>Para trabalhar com Gestão da Tecnologia da Informação, o profissional precisa<b> aliar competências técnicas e gerenciais.</b></p>
+
+<p>Além de conhecer e gostar de tecnologia, é importante desenvolver uma visão mais ampla e estratégica para poder gerenciar os recursos tecnológicos da empresa, desenvolver e aplicar mecanismos de apoio à tomada de decisão a partir de indicadores de TI, gerenciar projetos e pessoas.</p>
+
+<p>É um perfil que exige <b>bastante capacidade de comunicação,</b> tanto para orientar programadores e desenvolvedores como para “traduzir” informações da área de TI para outros executivos da empresa.</p>
+
+<p>Espírito de equipe, liderança e organização também são bastante valorizados neste tipo de profissional.</p>
+
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="single-feature wow zoomIn">
+                  <i class="fa fa-smile-o feature-icon"></i>
+                  <h4 class="feat-title">Mercado de trabalho</h4>
+                  <p><p>O profissional formado em Gestão da Tecnologia da Informação encontra oportunidades em organizações públicas e privadas de qualquer setor que utilizem TI como diferencial em seus produtos e serviços.</p>
+
+                    <p>Essas empresas podem estar ligadas diretamente à tecnologia, como desenvolvedores de software e equipamentos, firmas que oferecem mão de obra terceirizada para TI e operadoras de telefonia, ou qualquer organização que utilize a tecnologia em seus processos, como bancos, seguradoras, comércio eletrônico, indústrias e hospitais, entre outras.</p>
+
+                    <p>Suas atividades podem envolver:</p>
+                    <ul style="list-style-type:square">  
+                     <p> <li>Consultoria estratégica de TI.</li>
+                        <li>Desenvolvimento de plano de negócio.</li>
+                         <li>Gestão de processos e projetos envolvendo tecnologia, incluindo análise de riscos, custos, recursos e qualidade.</li></p>
+                            </ul> 
+
+                        <p>O<b> mercado de Tecnologia da Informação (TI) é um dos mais aquecidos</b> e existe uma carência de profissionais qualificados para atender a demanda das empresas. Por isso, quem trabalha com TI em geral encontra boas oportunidades de emprego, com salários atrativos.</p>
+
+                    </p>
+                </div>
+              </div>
+             
+              
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Caracteristicas -->
+
+  <!-- Start subscribe -->
+  <section id="subscribe">
+    <div class="subscribe-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="subscribe-area">
+              <h2 class="wow fadeInUp">Receba Atualizações no EMAIL:</h2>
+              <form action="" class="subscrib-form wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                <input type="text" placeholder="Digite seu email...">
+                <button class="subscribe-btn" type="submit">inscrever</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Start footer -->
+<footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <div class="footer-left">
+            <p>Desenvolvido por <a href="#">Guilherme</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="footer-right">
+            <a href="index.html"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End footer -->
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.js"></script>
+    <!-- Slick Slider -->
+    <script type="text/javascript" src="assets/js/slick.js"></script>    
+    <!-- mixit slider -->
+    <script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
+    <!-- Add fancyBox -->        
+    <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+   <!-- counter -->
+    <script src="assets/js/waypoints.js"></script>
+    <script src="assets/js/jquery.counterup.js"></script>
+    <!-- Wow animation -->
+    <script type="text/javascript" src="assets/js/wow.js"></script> 
+    <!-- progress bar   -->
+    <script type="text/javascript" src="assets/js/bootstrap-progressbar.js"></script>  
+    
+   
+    <!-- Custom js -->
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+    
+  </body>
+</html>
